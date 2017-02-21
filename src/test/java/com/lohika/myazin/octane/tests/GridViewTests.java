@@ -17,7 +17,9 @@ public class GridViewTests extends BaseTest {
         EntitiesGridViewContainer gridViewContainer = defectsPage.entitiesArea.switchToGridView()
                 .entitiesArea
                 .entitiesGridViewContainer;
-        gridViewContainer.gridViewRows.get(0)
-                .cells.get(0).getValue();
+        System.out.println(gridViewContainer.gridViewRows.get(0)
+                .cells.get(1).getValue());
+
+        defectsPage.logout();
     }
 }
